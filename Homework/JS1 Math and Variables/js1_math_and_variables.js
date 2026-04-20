@@ -13,18 +13,33 @@ function ex() {
 } //Example Script
 
 function q1() {
+  let num1 = Number(prompt("What is your first number?"));
+  let num2 = Number(prompt("What is your second number?"));
+  let result = num1 + num2;
+console.log(`Your first number is ${num1}. Your second number is ${num2}. The sum is ${result}.` );
   /* Create a program that will prompt the user to enter 2 numbers. 
         In the console: Your program  will then display these 2 numbers 
         and the sum of these 2 numbers.*/
 } //Sum of Two
 
+
 function q2() {
+  let firstName= String(prompt("What's your first name?"))
+  let lastName= String(prompt("What's your last name?"))
+  let bornYear= String(prompt("What year were you born?"))
+  console.log(`Name :${firstName} ${lastName}  born year: ${bornYear}` );
+  
+
   /* Write a program that will prompt the user to input their first name, 
         last name and year they were born. 
         In the console: The program will then print the person’s full name and their age.*/
 } //Name and Age
+  
 
 function q3() {
+  let radius = Number(prompt("What is the radius?"));
+
+  let result = num1 + num2;
   /* Create a program that will prompt a user to enter the radius of a circle. 
         In the console: Your program will then display the circumference of that circle and it’s area.*/
 } //Circle Circumference and Area
