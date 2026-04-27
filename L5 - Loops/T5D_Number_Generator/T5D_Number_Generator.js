@@ -14,4 +14,28 @@ Return (part of function notation)
 
 function number_generator() {
   /* */
+  let n = Number(prompt('how many numbers'));
+  let L = Number(prompt('What is the lowest number'));
+  let H = Number(prompt('what is the highest number'));
+  let array=[];
+
+  if (n > H- L +1){
+	console.log('Error');
+	return;
+  }
+
+
+  while (array.length < n){
+	let randomNum = Math.floor(Math.random() * (H - L + 1) + L);
+
+	if (!array.include(randomNum)){
+		array.push(randomNum);
+	}
+  }
+
+  array.sort(function(a,b)) {
+	return a - b;
+  }
+
+
 } // number_generator

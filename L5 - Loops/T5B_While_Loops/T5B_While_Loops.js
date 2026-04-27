@@ -2,6 +2,22 @@
   !!! You can call your functions in the console or through prompt.  !!!  */
 
 function t1() {
+  let fuel = Number(prompt("Starting fuel"));
+  while (fuel < 5000 || fuel > 30000|| isNaN(fuel)){
+    alert('fuel must be between 5000 and 30000');
+    let fuel = Number(prompt("Starting fuel"));
+  }
+  let astro = Number(prompt('Number of astronauts'));
+  while(astro<2 || astro >7){
+    alert('number must be between 1 and 7');
+    let astro = Number(prompt('Number of astronauts'));
+
+
+  }
+  
+  let attitude = 0;
+
+
   //Define three variables for the a SpaceShip shuttle
   //- one for the starting fuel level,
   // another for the number of astronauts aboard,
