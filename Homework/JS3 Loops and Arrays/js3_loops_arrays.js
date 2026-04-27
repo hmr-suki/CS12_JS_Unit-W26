@@ -26,6 +26,18 @@ IN: An array with numbers representing a student’s grade 12 marks. (Could be o
 DO: Determine the average of the marks. A loop is required. 
 OUT: return the average mark. 
  */
+gradeList=q2();
+for (let i = 0; i < gradeList.length; i++ ){
+  let mark = gradrList[i];
+  let sum = 0;
+  sum = sum+ mark;
+
+
+}
+average = sum / gradeList.length;
+
+
+
 
 
 } //Average_mark
