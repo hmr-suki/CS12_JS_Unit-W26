@@ -8,11 +8,19 @@
 
   <body>
     <!-- Text -->
+    <p> Enter Your color name</p>
     <!-- Input Box -->
+    <input type="text" class="color" name="color">
     <!-- Button -->
+    <button class="btn" onclick="backGround()">Change</button>
 
     <script>
       //function goes here
+      function backGround(){
+        let color = document.querySelector('.color').value;
+        document.body.style.backgroundColor = color;
+
+      }
     </script>
   </body>
 </html>

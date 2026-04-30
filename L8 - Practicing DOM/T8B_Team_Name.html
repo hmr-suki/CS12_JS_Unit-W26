@@ -10,26 +10,51 @@
     <h3>Hover over image to get caption</h3>
 
     <img
-      src="https://charbricks.com/wp-content/uploads/2021/02/32-plain-blue.jpg"
+      src="image1.png"
       height="125px"
+      width="125px"
       alt=""
+      onmouseover="showName('Hajimi')"
+      onmouseout="clearbox()"
     />
 
     <img
-      src="https://charbricks.com/wp-content/uploads/2021/02/32-plain-blue.jpg"
+      src="image2.png"
       height="125px"
+      width="125px"
       alt=""
+      onmouseover="showName('angry bird')"
+      onmouseout="clearbox()"
     />
 
     <img
-      src="https://charbricks.com/wp-content/uploads/2021/02/32-plain-blue.jpg"
+      src="image3.png"
       height="125px"
+      width="125"
       alt=""
+      onmouseover="showName('diddy')"
+      onmouseout="clearbox()"
     />
+    <img
+    src="image4.png"
+    height="125px"
+    width="125"
+    alt=""
+    onmouseover="showName('The baby eater')"
+    onmouseout="clearbox()"
+  />
     <br />
     <!-- input box here for text of the caption -->
+    <input type="text" class="team" name="team">
     <script>
       //place function(s) here
+      function showName(name){
+        document.querySelector('.team').value = name;
+
+      }
+      function clearbox(){
+        document.querySelector('.team').value = '';
+      }
       // don't forget to add event handlers to each img
     </script>
   </body>

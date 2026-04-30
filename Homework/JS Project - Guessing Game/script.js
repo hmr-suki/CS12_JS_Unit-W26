@@ -16,8 +16,7 @@ let messageObj = document.querySelector(".message");
 let guessObj = document.querySelector('.guess') ;
 let scoreObj = document.querySelector('.score');
 let hscoreObj = document.querySelector('.highscore');
-console.log(scoreObj.textContent)
-console.log(hscoreObj)
+
 
 
 function guess(){

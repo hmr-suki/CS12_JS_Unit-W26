@@ -15,10 +15,12 @@
   <body>
     <h1>DOM TASK - Change Opacity</h1>
 
-    <div class="box">Box</div>
+    <div class="box"></div>
     <br />
-    <!-- add button for lighter -->Lighter!
-    <!-- add button for darker -->Darker!
+    <!-- add button for lighter -->
+    <button class="btn2" onclick="Lighter()">Lighter</button>
+    <!-- add button for darker -->
+    <button class="btn1" onclick="Barker()">Darker</button>
 
     <script>
       // ELEMENTS
@@ -27,13 +29,19 @@
 
       //VARIABLES
       //opacity variable
-
+      let opacity = 1;
       //FUNCTIONS
       //light function decreases opacity
-      function light() {}
+      function lighter() {
+        opacity -=0.1;
+        document.querySelector('.box').style.opacity = opacity
+      }
 
       //dark function increases opacity
-      function dark() {}
+      function darker() {
+        opacity+=0.1;
+        document.querySelector('.box').style.opacity = opacity
+      }
 
       //EVENT LISTENERS
       //add a click event to light button that calls the light function
