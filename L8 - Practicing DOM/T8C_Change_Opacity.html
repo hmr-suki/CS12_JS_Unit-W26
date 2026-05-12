@@ -18,9 +18,9 @@
     <div class="box"></div>
     <br />
     <!-- add button for lighter -->
-    <button class="btn2" onclick="Lighter()">Lighter</button>
+    <button class="btn2">Lighter</button>
     <!-- add button for darker -->
-    <button class="btn1" onclick="Barker()">Darker</button>
+    <button class="btn1" >Darker</button>
 
     <script>
       // ELEMENTS
@@ -29,7 +29,7 @@
 
       //VARIABLES
       //opacity variable
-      let opacity = 1;
+      let opacity = 0.5;
       //FUNCTIONS
       //light function decreases opacity
       function lighter() {
@@ -45,7 +45,9 @@
 
       //EVENT LISTENERS
       //add a click event to light button that calls the light function
+      document.querySelector(".btn2").addEventListener("click", lighter);
       //add a click event to dark button that calls the dark function
+      document.querySelector(".btn1").addEventListener("click", darker);
     </script>
   </body>
 </html>

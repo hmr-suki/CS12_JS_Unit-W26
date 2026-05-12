@@ -2,3 +2,32 @@ html {
   height: 100%;
   width: 100%;
 }
+body {
+  font: 14px arial;
+  text-align: center;
+  background-color: black;
+}
+.wrapper {
+  margin: 0 auto; /* center it all on the page*/
+  width: 700px; /* set width of order form */
+  display: flex;
+  gap:50px;
+  background-color: lightyellow;
+  border: 5px solid red;
+  padding: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.heading {
+  font: 20px arial;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 25px;
+}
+.field {
+  margin-bottom: 5px;
+  text-align: right;
+}
+.img{
+  height: 500px;
+}
