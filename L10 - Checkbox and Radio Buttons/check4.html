@@ -6,6 +6,13 @@
     <script>
       function lights() {
              //need code here
+          if (document.querySelector("#lightChkBox").checked == true) {
+          document.body.style.backgroundColor = "black"
+          // a block element fills the entire line and nothing can be displayed on it's right or left side.
+        } else {
+          document.body.style.backgroundColor = "white"
+          // element will not be displayed on the screen
+        }
        }      
     </script>
   </head>
@@ -13,6 +20,7 @@
     <form>
       Light Switch: <input type="checkbox" id="lightChkBox" onClick="lights()" name="" value="">
     </form>
+
   </body>
 </html>
 

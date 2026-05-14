@@ -5,11 +5,32 @@
     <title>Checkbox Problem</title>
     <script>
       //need code here
+      function check() {
+             //need code here
+          if (document.querySelector("#Javascript").checked == true) {
+          alert('u like javascript')
+          // a block element fills the entire line and nothing can be displayed on it's right or left side.
+        } else if(document.querySelector("#Python").checked == true) {
+          alert('u like python')
+          // element will not be displayed on the screen
+        }else if(document.querySelector("#Java").checked == true){
+          alert('u like java')
+
+        }
+       }      
     </script>
   </head>
   <body>
     <form>
       <!-- need code here-->
+      Javascript: <input type="checkbox" id="Javascript"  name="" value="">
+      Python: <input type="checkbox" id="Python" name="" value="">
+      Java: <input type="checkbox" id="Java" name="" value="">
     </form>
+    <button class = 'check' onclick = 'check()'>check
+
+    </button>
+
+
   </body>
 </html>

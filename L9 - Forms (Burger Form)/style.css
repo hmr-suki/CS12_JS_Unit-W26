@@ -5,17 +5,17 @@ html {
 body {
   font: 14px arial;
   text-align: center;
-  background-color: black;
+  background-color: lightyellow;
 }
 .wrapper {
   margin: 0 auto; /* center it all on the page*/
-  width: 700px; /* set width of order form */
+  width: 600px; /* set width of order form */
   display: flex;
   gap:50px;
   background-color: lightyellow;
   border: 5px solid red;
   padding: 20px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
 }
 .heading {
